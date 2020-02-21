@@ -1,0 +1,77 @@
+﻿{
+    "manifestVersion": 1,
+    "id": "cds-data-extract",
+    "name": "CDS Data Extract tasks",
+    "version": "0.1.10",
+    "publisher": "slautebach",
+    "description": "Utility tasks for Managing CDS Data Configurations",
+    "public": true,
+    "icons": {
+        "default": "images/Icon128.png",
+        "large": "images/Icon512.png"
+    },
+    "screenshots": [
+    	{
+      		"path": "images/screen1.png"
+    	},
+    	{
+      		"path": "images/screen1.png"
+    	},
+    	{
+      		"path": "images/screen1.png"
+    	}
+    ],
+    "categories": [
+        "Build and release"
+    ],
+    "tags": [
+        "utility",
+        "tasks"
+    ],
+    "links": {
+        "getstarted": {
+            "uri": ""
+        },
+        "issues": {
+            "uri": ""
+        },
+        "repository": {
+            "uri": ""
+        }
+	},
+    "branding": {
+        "color": "#f6f7fb",
+        "theme": "light"
+    },	
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
+    "files": [
+      {
+        "path": "Data-Extract"
+      }
+    ],
+    "scopes": [
+        "vso.build_execute",
+        "vso.serviceendpoint_manage"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "cds-data-devops",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "Data-Extract"
+            }
+        }
+    ]
+}
